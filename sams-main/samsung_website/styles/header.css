@@ -1,0 +1,113 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'SamsungOne',arial,sans-serif;
+  box-sizing: border-box;
+}
+button {
+  border: 0;
+  background: 0;
+  border-radius: 0;
+  cursor: pointer;
+  font: inherit;
+  color: black;
+}
+li{
+  list-style: none;
+  text-decoration: none;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+.header-icon{
+  height: 26px;
+  width: 26px;
+}
+.header-main{
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.left-menu, .right-menu{
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  height: 80px;
+  z-index: 2000;
+
+}
+.main_text-box{
+  display: inline-flex;
+  height: 100%;
+  margin-right: 1px;
+}
+.header-logo{
+  display: inline-flex;
+  align-items: center;
+  width: 120px;
+  height: 100%;
+  margin-right: 64px;
+}
+.icons{
+  margin-left: 28px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.profile, .search{
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  
+}
+.main_header-text{
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.header-text{
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn {
+  padding: 7px;
+}
+.space, .search{
+  margin-right: 8px;
+}
+.menu{
+  display: none;
+}
+@media (max-width: 1440px) {  
+  .main_header-text {  
+      display: none; /* Скрыть текст заголовка на малых экранах */  
+  }  
+  
+  .menu {  
+      display: block; /* Показать бургер-меню на малых экранах */  
+  }  
+  .space, .search{
+    margin-right: 0;
+  }
+  .btn{
+    display: inline-flex;
+    justify-content: center
+  }
+  .icons{
+    margin-left: auto;
+  }
+}  
